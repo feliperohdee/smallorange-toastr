@@ -31,7 +31,7 @@ const place = (html, type, time = 4500, footerText = 'Tap to close') => {
 
             !count && container.remove();
         }, 300);
-    }
+    };
 
     toastr.className = `toastr ${type}`;
     toastr.addEventListener('click', toastr.close);
