@@ -30,7 +30,7 @@ const place = (html, type, time = 4500, footerText = 'Tap to close') => {
             const childNodes = container && container.childNodes;
             const count = childNodes && childNodes.length;
 
-            !count && container.remove();
+            !count && container && container.remove();
         }, 300);
     };
 
