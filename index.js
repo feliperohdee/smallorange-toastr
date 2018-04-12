@@ -26,7 +26,8 @@ const place = (html, type, time = 4500, footerText = 'Tap to close') => {
             toastr.removeEventListener('click', toastr.close);
             toastr.remove();
 
-            const childNodes = document.querySelector('.toastrContainer').childNodes;
+            const container = document.querySelector('.toastrContainer');
+            const childNodes = container && container.childNodes;
             const count = childNodes && childNodes.length;
 
             !count && container.remove();
